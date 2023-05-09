@@ -1,7 +1,7 @@
 {
   "name": "promises-solved",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Clone this repository.\r - Create a new repository in your Github account. Set it to be a public repo. Copy the new repo SSH path.\r - Open the cloned repo project in your favorite IDE. Start a terminal session.\r - Update/change the remote origin path with to the new SSH path **OR** add a new path (f.i \"solved\" or \"destination\"). [Github's git remote actions docs](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories).\r - Push the main/master branch to the new repository.\r - Run ```npm i``` to install dependencies and packages.\r - Start solving the exercises, following the \"HOW IT WORKS\" section.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -27,9 +27,18 @@
   "dependencies": {
     "json-server": "^0.17.3",
     "node-fetch": "^3.3.1",
+    "vite": "^4.3.5",
     "vitest": "^0.29.7"
   },
   "devDependencies": {
     "eslint": "^8.37.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilyBarr09/promises-practice-solved.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LilyBarr09/promises-practice-solved/issues"
+  },
+  "homepage": "https://github.com/LilyBarr09/promises-practice-solved#readme"
 }

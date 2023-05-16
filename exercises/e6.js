@@ -16,10 +16,9 @@
 
 export const handlePromise = () => {
   // Your code goes here...
-  return new Promise((reject) => {
-    reject("REJECTED");
-  })
-    .catch((reason) => console.log(reason))
+  const promise = new Promise((resolve, reject) => reject("REJECTED!"));
+  return promise
+    .catch((err) => console.log(err))
     .finally(() => console.log("This promise is finished!"));
 };
 

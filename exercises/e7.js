@@ -24,7 +24,7 @@ export function parsePromised(json_string) {
     try {
       resolve(JSON.parse(json_string));
     } catch (e) {
-      throw e;
+      reject(e);
     }
   });
 }
@@ -59,6 +59,7 @@ export const handlePromise = (promise) => {
       if (e.message) {
         return onReject(e);
       } else {
+        console.log(e);
         return e;
       }
     });

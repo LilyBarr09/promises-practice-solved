@@ -10,10 +10,10 @@
  * The function must be exported
  */
 
-export function iterate(arg) {
+export function iterate(argument) {
   // Your code goes here...
-  console.log(arg);
-  return arg + 1;
+  console.log(argument);
+  return argument + 1;
 }
 
 /**

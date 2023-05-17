@@ -24,7 +24,7 @@ export function parsePromised(json_string) {
     try {
       resolve(JSON.parse(json_string));
     } catch (e) {
-      reject(e);
+      throw e;
     }
   });
 }
@@ -36,8 +36,8 @@ export function parsePromised(json_string) {
  * * logs the message property of the error object
  */
 
-export function onReject({ message }) {
-  console.log(message);
+export function onReject(error) {
+  console.log(error.message);
 }
 
 /**
@@ -59,7 +59,6 @@ export const handlePromise = (promise) => {
       if (e.message) {
         return onReject(e);
       } else {
-        console.log(e);
         return e;
       }
     });
